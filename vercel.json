@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/signup",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/login",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/notes",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/notes/(.*)",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/((?!api/|signup$|login$|notes$|notes/|assets/|favicon.ico).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
